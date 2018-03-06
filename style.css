@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	max-width: 800px;
+  	margin: 0 auto;
+}
+
+.row:before, .row:after { 
+	content:""; 
+	display: table ; 
+	clear: both; 
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 10px;
+}
+
+.hero {
+	width: 100%;
+	height: 600px;
+	background-image: url("images/pexels-photo.jpeg");
+	background-size: cover;
+	color: #fff;
+}
+
+.hero h3 {
+	padding-top: 250px;
+	font-size: 40px;
+	letter-spacing: 2px;
+
+}
+
+.relative {
+	position: relative;
+}
+.phone {
+	max-height: 500px;
+	position: absolute;
+	top: 200px;
+	z-index: 1;
+}
+.tile {
+	height: 250px;
+	padding: 20px 20px;
+}
+
+.tile a {
+	text-decoration: none;
+	color: #fff;
+}
+.tile1 {
+	background-color: #f5989d;
+}
+
+.tile2 {
+	background-color: #615f7d;
+}
+
+.tile3 {
+	background-image: url("https://images.pexels.com/photos/336586/pexels-photo-336586.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-color: #f5989d;
+
+}
+
+.tile4 {
+	background-color: #bd8cbf;
+}
+
+.tile5 {
+	background-image: url("https://images.pexels.com/photos/268904/pexels-photo-268904.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-color: #f5989d;
+}
+
+.tile6 {
+	background-color: #82ca9c;
+}
+
+.tile7 {
+	background-image: url("https://images.pexels.com/photos/678640/pexels-photo-678640.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+}
+
+.green {
+	background-color: #82ca9c;
+	color: #fff;
+}
+
+.picture{
+	width: 100%;
+	height: 500px;
+	background-image: url("images/pexels-photo2.jpeg");
+	background-size: cover;
+	color: #fff;
+}
+
+.picture h1{
+	padding-top: 250px;
+	font-size: 40px;
+}
+.tiles {
+	color: #fff;
+}
+
+#info {
+	background-color: #f6f7fa;
+}
+
+.info {
+	margin: 20px;
+	padding:20px;
+}
+
+.info-shadow {
+	background-color: #fff;
+	box-shadow: 0px 0px 43px 4px rgba(71,71,71,1);
+}
+
+.btn-gray {
+	background-color: #e1e1e1;
+	text-transform: uppercase;
+	border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn-violet {
+	background-color: #bd8cbf;
+	text-transform: uppercase;
+	border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn-green {
+	background-color: #82ca9c;
+	text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+footer {
+	background-color: #192431;
+	color: #fff;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+form input {
+	padding: 15px;
+}
+
+form button {
+	background-color: #82ca9c;
+	padding: 17px;
+	color: #fff;
+	border: none;
+}
+
+.col-1 {width: 8.33%;} 
+.col-2 {width: 16.66%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.33%;} 
+.col-5 {width: 41.66%;} 
+.col-6 {width: 50%;} 
+.col-7 {width: 58.33%;} 
+.col-8 {width: 66.66%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.33%;} 
+.col-11 {width: 91.66%;} 
+.col-12 {width: 100%;}
+
+
+@media (max-width: 767px) {
+
+	.hero h3 {
+		padding-top: 100px;
+	}	
+
+	.phone {
+		position: static;
+		max-height: 400px;
+		z-index: 0;
+	}
+
+	.col-m-1 {width: 8.33%;} 
+	.col-m-2 {width: 16.66%;} 
+	.col-m-3 {width: 25%;} 
+	.col-m-4 {width: 33.33%;} 
+	.col-m-5 {width: 41.66%;} 
+	.col-m-6 {width: 50%;} 
+	.col-m-7 {width: 58.33%;} 
+	.col-m-8 {width: 66.66%;} 
+	.col-m-9 {width: 75%;} 
+	.col-m-10 {width: 83.33%;} 
+	.col-m-11 {width: 91.66%;} 
+	.col-m-12 {width: 100%;}
+} 
+
+
+@media (max-width: 480px) {
+
+	.phone {
+		position: static;
+		max-height: 300px;
+		z-index: 0;
+	}
+
+	.hero h3 {
+		padding-top: 100px;
+	}	
+
+	.col-s-1 {width: 8.33%;} 
+	.col-s-2 {width: 16.66%;} 
+	.col-s-3 {width: 25%;} 
+	.col-s-4 {width: 33.33%;} 
+	.col-s-5 {width: 41.66%;} 
+	.col-s-6 {width: 50%;} 
+	.col-s-7 {width: 58.33%;} 
+	.col-s-8 {width: 66.66%;} 
+	.col-s-9 {width: 75%;} 
+	.col-s-10 {width: 83.33%;} 
+	.col-s-11 {width: 91.66%;} 
+	.col-s-12 {width: 100%;} 
+}
